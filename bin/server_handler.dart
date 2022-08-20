@@ -1,15 +1,15 @@
 import 'package:shelf/shelf.dart';
-import 'package:shlef_router/shelf_router.dart';
+import 'package:shelf_router/shelf_router.dart';
 
-class SeveRandler {
+class ServeRandler {
   Handler get handler{
     final router = Router();
 
     router.get('/', (Request request) {
-      return Response(200, body: 'Primeira Rota',); 
+      return Response(200, body: 'Primeira Rota'); 
 
-    },);
-
+    });
+  
     return router;
   }
 }
